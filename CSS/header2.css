@@ -1,3 +1,28 @@
 .h-two {
-    
+    text-align: center;
+    padding: 30px;
 }
+
+.mid-small {
+    font-size: 11.45px;
+}
+
+.very-small {
+    font-size: 10px;
+}
+
+.bold-letters {
+    font-weight: 1000;
+}
+.bold-letters-two {
+    font-weight: 600;
+}
+
+.href {
+    text-decoration: none;
+    color: black;
+}
+.href:hover {
+    text-decoration: underline;
+    color:  #741f74;
+} 

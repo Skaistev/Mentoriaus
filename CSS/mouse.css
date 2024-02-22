@@ -1,0 +1,35 @@
+.choose > .mouse {
+    background-color: rgb(77, 221, 149);
+    border: 1px solid rgb(77, 221, 149);
+    width: 25px;
+    height: 15px;
+    border-radius:30px;
+}
+.mouse::before {
+    content: '';
+    display:block;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 60px;
+    width: 7px;
+    height: 7px;
+    margin-top: calc(50% - 9px);
+    margin-left: 13px;
+    animation-name: scroll;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+
+}
+
+@keyframes scroll {
+    0%{ margin-left: 1px;  }
+    100%{ margin-left: 14px;}
+} 
+
+
+
+.mouse:hover::before{
+    animation-play-state: paused;
+  }
+  

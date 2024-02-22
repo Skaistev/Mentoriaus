@@ -1,3 +1,9 @@
+:root {
+    --primary: #b946b9;
+    --secondary: #741f74;
+    --grey:#737779;
+}
+
 body,
 body* {
 margin: 0;
@@ -16,7 +22,7 @@ font-family: 'Roboto', sans-serif;
     align-items: center;}
 
 .header > .topBelt {
-    background-color: rgb(116, 31, 116);
+    background-color: var(--secondary);
     height: 30px;
     text-align: center;
 }
@@ -61,16 +67,16 @@ align-items: center;
 }
 .nav-link {
     text-decoration: none;
-    color: #2B0236;
+    color: var(--secondary);
 }
 .navigationBar > .button {
-   border: 2px solid rgb(185, 70, 185) ;
+   border: 2px solid var(--primary) ;
    
-   color: rgb(185, 70, 185);
+   color: var(--primary);
    
 }
 .navigationBar > .button:hover {
-   background-color: rgb(185, 70, 185);
+   background-color: var(--primary);
     color: white;
   
 }
@@ -149,6 +155,186 @@ align-items: center;
     justify-content: space-around;
     width: 50%;
     padding: 30px 0;
+}
+
+.app-help {
+    display: flex;
+    align-items:flex-start;
+    gap:100px;
+   justify-content: center;
+    width: 760px;
+    margin: 0 calc(50% - 380px)
+    
+}
+
+.app-help-left {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    width: 45%;
+    font-size: 10px;
+    
+}
+.app-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px 0;
+    border-radius: 2.6px;
+    box-shadow: 1px 5px 5px -2px rgba(0,0,0,0.1);
+-webkit-box-shadow: 1px 5px 9px -2px rgba(0,0,0,0.1);
+-moz-box-shadow: 1px 5px 9px -2px rgba(0,0,0,0.1);
+
+}
+.app-line > .button.full-color {
+    width: 50%;
+    background-color:  var(--secondary);
+
+}
+a.button.white {
+    background-color: #fff;
+    width: 50%;
+    border-color: #fff;
+    color: black;
+}
+
+.app-p {
+    background-color: #F2F2F2;
+    padding: 20px 15px;
+    margin: 0 10px 0 10px;
+    font-weight: lighter;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+    width: 800px;
+    margin: 0 calc(50% - 400px);
+}
+iframe {
+    width: 100%;
+}
+.video-header {
+    padding: 0px;
+  margin: 40px 0 0 0 ;
+
+}
+.on-video {
+    display: inline;
+   margin: 0px 90px;
+   text-align: center;
+}
+.images-container {
+    display:flex;
+    width: 820px;
+    margin: 0 calc(50% - 410px);
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.img {
+    height: 170px;
+}
+.images-box {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.image-down-words {
+    color: var(--primary);
+}
+.image-down-words:hover {
+    color: black;
+    text-decoration: underline;
+}
+.pkg {
+    background-color: #fcf5fc;
+    padding: 100px 0 0 0;
+ 
+}
+
+.pkg-container {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+}
+.pkg-section-one {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+
+}
+.pkg-section-one > .h-two {
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+.choose {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.discount-label {
+    background-color: rgb(240, 201, 30);
+    font-size: 9px;
+   height: 12px;
+   padding: 2px;
+   border-radius: 3px;
+    
+}
+.pkg-section-two{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+}
+
+.column-btn {
+    display: block;
+    width: 160px;
+    height: 24px;
+    margin: 0 calc(50% - 86px);
+    font-size: 14px;
+    line-height: 20px;
+    border-color: var(--secondary);
+    color: var(--secondary)
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    width: 170px;
+    height: 320px;
+    border: 1px solid rgb(214, 211, 211);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.column-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--grey);
+
+}
+.pkg-section-two > .clm-third {
+    background-color: rgb(77, 221, 149);
+}
+
+.pkg-section-two > .clm-third-h2 {
+    color: white;
 }
 
 
