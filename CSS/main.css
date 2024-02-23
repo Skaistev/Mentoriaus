@@ -619,6 +619,84 @@ li::before {
     height: 500px;
 }
 
+.very-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:90px;
+    width: 1200px;
+    margin: 90px calc(50% - 600px);
+
+}
+.end-left {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 300px;
+}
+.end-rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+}
+.columns-end-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 800px;
+    margin: 50px 0
+}
+.column-end {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 200px;
+}
+.end-line {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.end-line > p {
+    line-height: 29.5px;
+}
+.end-list {
+    text-decoration: none;
+}
+
+.end-left > img {
+    width: 160px;
+    height: 60px;
+
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.social-link {
+    text-decoration: none;
+}
+
+
+
+
+.end {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--secondary);
+    height: 30px;
+}
+.at {
+    font-size: 13px;
+}
+
+
 
 @media (max-width: 480px) {
     .navigationBar {
